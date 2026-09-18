@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>casaco com sensor 2D</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b12;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      background: radial-gradient(circle at top, #24244a, #0b0b12 60%);
+    }
+    .container { width: min(1050px, 92%); margin: auto; }
+    .avatar {
+      width: 140px; height: 140px; border-radius: 50%;
+      object-fit: cover; border: 4px solid #7c5cff;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: clamp(2.5rem, 8vw, 5rem); }
+    .highlight { color: #8d72ff; }
+    .subtitle { color: #bbb; font-size: 1.15rem; margin: 10px 0 25px; }
+    .btn {
+      display: inline-block; padding: 13px 22px; margin: 6px;
+      border-radius: 30px; text-decoration: none; font-weight: bold;
+      background: #7c5cff; color: white; transition: .2s;
+    }
+    .btn:hover { transform: translateY(-3px); filter: brightness(1.15); }
+    .btn.secondary { background: transparent; border: 1px solid #555; }
+    section { padding: 90px 0; }
+    section h2 { font-size: 2.2rem; margin-bottom: 30px; }
+    .about { color: #c7c7c7; max-width: 750px; }
+    .cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #15151f; border: 1px solid #292936;
+      padding: 25px; border-radius: 18px;
+    }
+    .card h3 { margin-bottom: 8px; color: #9b86ff; }
+    .socials { display: flex; flex-wrap: wrap; gap: 12px; }
+    footer {
+      text-align: center; padding: 30px; color: #777;
+      border-top: 1px solid #222;
+    }
+    @media (max-width: 600px) {
+      section { padding: 65px 0; }
+      .avatar { width: 110px; height: 110px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== INÍCIO ===== -->
+  <header>
+    <div class="container">
+      <!-- TROQUE A URL ABAIXO PELA SUA FOTO -->
+      <img class="avatar" src="https://placehold.co/300x300" alt="Minha foto">
+
+      <!-- TROQUE SEU NOME AQUI -->
+      <h1>Olá, eu sou <span class="highlight">Tiago Antunes</span></h1>
+
+      <!-- TROQUE SUA DESCRIÇÃO AQUI -->
+      <p class="subtitle">Casaco com sensor</p>
+
+      <a class="btn" href="#sobre">Conheça-me</a>
+      <a class="btn secondary" href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre o Projeto</h2>
+      <p class="about">
+O casaco usa sensores no peito para detectar obstáculos altos que a bengala tradicional não percebe, como galhos de árvores. Ao encontrar um objeto, o sensor começa a apitar, avisando a pessoa cega para desviar com segurança.
+
+
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section>
+    <div class="container">
+      <h2>Principais habilidades que este projeto desenvolve</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Detecção de obestáculos</h3>
+          <p>Possui uma capacidade de identificar objetos suspensos (como galhos e placas) que a bengala tradicional não consegue alcançar.</p>
+        </div>
+        <div class="card">
+          <h3>Mapeamento de distância em tempo real</h3>
+          <p>  Capacidade de calcular a proximidade do objeto a cada segundo, fazendo o casaco apitarr mais rápido ou mais forte à medida que o usuário se aproxima do perigo</p>
+        </div>
+        <div class="card">
+          <h3>Autonomia e segurança</h3>
+          <p>Ampliação da liberdade de movimento da pessoa cega, reduzindo drasticamente o risco de colisões na região do tronco e da cabeça.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AS 3 ETAPAS DO FUNCIONAMENTO  ===== -->
+  <section>
+    <div class="container">
+      <h2>Casaco com sensor de presença:</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Componentes eletrônicos nessesarios</h3>
+          <p><p>
+              
+        
+           <a class="btn" href="https://drive.google.com/file/d/1ch6fwyWgy2UqLqjcLnPmrHO_jQKPHiv4/view?usp=drivesdk" target="_blank">Ver componentes</a>
+        </div>
+        <div class="card">
+          <h3>Projeto 02</h3>
+          <p>Descrição do seu segundo projeto.</p>
+    
+          <a class="btn" href="https://seulink.com/projeto1" target="_blank">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Projeto 03</h3>
+          <p>Descrição do seu terceiro projeto.</p>
+          <a class="btn" href="#" target="_blank">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="about">Me encontre nas redes sociais:</p><br>
+
+      <div class="socials">
+        <!-- TROQUE OS LINKS ABAIXO -->
+        <a class="btn" href="https://instagram.com/dexpz07" target="_blank">Instagram</a>
+        <a class="btn" href="https://github.com/" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.tiktok.com/@tiagogames010?_r=1&_t=ZS-99pzmNXCOxQ" target="_blank">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Seu Nome — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
